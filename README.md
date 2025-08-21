@@ -3,8 +3,7 @@
 
 
 ## LakeFS | Kubernetes ☸️
-lakeFS is an open-source tool that transforms your object storage into a Git-like repository. It enables you to manage your data lake the way you manage your code.
-lakeFS supports AWS S3, Azure Blob Storage, and Google Cloud Storage as its underlying storage service. It is API compatible with S3 and works seamlessly with all modern data frameworks such as Spark, Hive, AWS Athena, DuckDB, and Presto.
+lakeFS is an tool that transforms your object storage into a Git-like repository. It enables you to manage your data lake the way you manage your code. lakeFS supports AWS S3, Azure Blob Storage, and Google Cloud Storage as its underlying storage service. It is API compatible with S3 and works seamlessly with all modern data frameworks such as Spark, Hive, AWS Athena, DuckDB, and Presto.
 
 #### 🎯 Key Features:
 
