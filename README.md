@@ -15,13 +15,13 @@ lakeFS supports AWS S3, Azure Blob Storage, and Google Cloud Storage as its unde
 - **📈 Zero-Copy Branching & Metadata Management**: Weaviate is built for mission-critical applications. Go from rapid prototyping to production at scale with native support for horizontal scaling, multi-tenancy, replication, and fine-grained role-based access control (RBAC).
 - **💰 Safe Merges & Rollbacks**: Radically lower resource consumption and operational costs with built-in vector compression. Vector quantization and multi-vector encoding reduce memory usage with minimal impact on search performance.
 - **💰 Integrations with Data & ML Ecosystem**:
-Compute: Apache Spark, Hive, Presto, Trino, dbt, Pandas.
-ML: PyTorch, TensorFlow, MLflow.
-Orchestration: Airflow, Dagster.
-Storage: AWS S3, GCP GCS, Azure Blob, MinIO, Ceph.
+# Compute: Apache Spark, Hive, Presto, Trino, dbt, Pandas.
+# ML: PyTorch, TensorFlow, MLflow.
+# Orchestration: Airflow, Dagster.
+# Storage: AWS S3, GCP GCS, Azure Blob, MinIO, Ceph.
 - **💰 Access Control & Governance**: Radically lower resource consumption and operational costs with built-in vector compression. Vector quantization and multi-vector encoding reduce memory usage with minimal impact on search performance.
 - **💰 Data CI/CD**: Automate testing and validation of data pipelines:
-- **💰 Web UI & CLI**: Radically lower resource consumption and operational costs with built-in vector compression. Vector quantization and multi-vector encoding reduce memory usage with minimal impact on search performance.
+- **💰 Web UI & CLI**: User-friendly UI to browse repositories, branches, commits, diffs.
 
 
 📦 Integrations
