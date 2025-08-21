@@ -14,7 +14,7 @@ lakeFS is an tool that transforms your object storage into a Git-like repository
 - **✅ Zero-Copy Branching & Metadata Management**: Branches and commits are lightweight (metadata-only).
 - **✅ Safe Merges & Rollbacks**: Merge tested changes from dev → staging → prod.
 - **✅ Integrations with Data & ML Ecosystem**:
-- **✅ Access Control & Governance**: Supports branch-level policies with [Open Policy Agent (OPA)].Fine-grained permissions for reads, writes, merges.Audit logs for compliance and governance.
+- **✅ Access Control & Governance**: Supports branch-level policies with [Open Policy Agent (OPA)] include audit logs for compliance and governance.
 - **✅ Data CI/CD**: Automate testing and validation of data pipelines:
 - **✅ Web UI & CLI**: User-friendly UI to browse repositories, branches, commits, diffs.
 
