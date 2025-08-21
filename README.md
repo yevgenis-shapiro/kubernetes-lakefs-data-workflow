@@ -7,16 +7,16 @@ lakeFS is an tool that transforms your object storage into a Git-like repository
 
 #### 🎯 Key Features:
 
-- **⚡ Git-like Version Control for Data**: Create repositories for datasets.
-- **🔌 Branching & Isolated Environments**: Create branches to test new ETL/ML pipelines or transformations safely.
-- **🔍 Atomic Commitsh**: Commit multiple data changes as a single atomic operation.
-- **🤖 Data Lineage & Reproducibility**: Every commit is a snapshot of your data.
-- **📈 Zero-Copy Branching & Metadata Management**: Branches and commits are lightweight (metadata-only).
-- **💰 Safe Merges & Rollbacks**: Merge tested changes from dev → staging → prod.
-- **💰 Integrations with Data & ML Ecosystem**:
-- **💰 Access Control & Governance**: Supports branch-level policies with [Open Policy Agent (OPA)].Fine-grained permissions for reads, writes, merges.Audit logs for compliance and governance.
-- **💰 Data CI/CD**: Automate testing and validation of data pipelines:
-- **💰 Web UI & CLI**: User-friendly UI to browse repositories, branches, commits, diffs.
+- **✅ Git-like Version Control for Data**: Create repositories for datasets.
+- **✅ Branching & Isolated Environments**: Create branches to test new ETL/ML pipelines or transformations safely.
+- **✅ Atomic Commitsh**: Commit multiple data changes as a single atomic operation.
+- **✅ Data Lineage & Reproducibility**: Every commit is a snapshot of your data.
+- **✅ Zero-Copy Branching & Metadata Management**: Branches and commits are lightweight (metadata-only).
+- **✅ Safe Merges & Rollbacks**: Merge tested changes from dev → staging → prod.
+- **✅ Integrations with Data & ML Ecosystem**:
+- **✅ Access Control & Governance**: Supports branch-level policies with [Open Policy Agent (OPA)].Fine-grained permissions for reads, writes, merges.Audit logs for compliance and governance.
+- **✅ Data CI/CD**: Automate testing and validation of data pipelines:
+- **✅ Web UI & CLI**: User-friendly UI to browse repositories, branches, commits, diffs.
 
 
 🚀 
