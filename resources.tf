@@ -23,6 +23,11 @@ module "nginx" {
   depends_on = [module.metallb]
 }
 
+module "postgresql" {
+  source = "./modules/postgresql"
+  depends_on = [module.nginx]
+}
+
 module "minio" {
   source = "./modules/minio"
   depends_on = [module.nginx]
@@ -30,7 +35,7 @@ module "minio" {
 
 module "lakefs" {
   source = "./modules/lakefs"
-  depends_on = [module.minio]
+  depends_on = [module.minio,module.postgresql]
 }
 
 
