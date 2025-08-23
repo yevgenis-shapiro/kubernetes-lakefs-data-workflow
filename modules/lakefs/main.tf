@@ -44,11 +44,11 @@ resource "helm_release" "lakefs" {
 
   set {
     name  = "blockstore.s3.credentials.accessKey"
-    value = "admin"
+    value = "root"
   }
 
   set {
     name  = "blockstore.s3.credentials.secretKey"
-    value = "q1w2e3r4100@"
+    value = "r9G$2vK!7pXq&dL@8zF#eB^4mN*1wQ0"
   }
 }
