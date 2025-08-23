@@ -11,8 +11,8 @@ resource "helm_release" "minio" {
 mode: standalone
 replicas: 1
 auth:
-  rootUser: admin
-  rootPassword: q1w2e3r4100@
+  rootUser: "root"
+  rootPassword: "r9G$2vK!7pXq&dL@8zF#eB^4mN*1wQ0"
 
 defaultBuckets: "lakefs,terraform"
 
