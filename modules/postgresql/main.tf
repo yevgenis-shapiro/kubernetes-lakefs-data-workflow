@@ -9,6 +9,6 @@ resource "helm_release" "postgresql" {
   wait             = true
 
   values = [
-    file("${path.module}/values-postgresql.yaml")
+    file("${path.module}/values-postgresql-ha.yaml")
   ]
 }
