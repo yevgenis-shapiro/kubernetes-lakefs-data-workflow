@@ -30,7 +30,7 @@ module "postgresql" {
 
 module "minio" {
   source = "./modules/minio"
-  depends_on = [module.nginx]
+  depends_on = [module.postgresql]
 }
 
 module "lakefs" {
