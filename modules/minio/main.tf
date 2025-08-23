@@ -1,7 +1,7 @@
 
 resource "helm_release" "minio" {
   name       = "minio"
-  namespace  = "minio"
+  namespace  = "default"
   repository = "https://charts.min.io/"
   chart      = "minio"
   version    = "5.0.15" # check latest version
