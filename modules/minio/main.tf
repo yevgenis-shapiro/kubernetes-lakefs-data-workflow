@@ -8,6 +8,8 @@ resource "helm_release" "minio" {
   create_namespace = true
 
   values = [<<EOF
+mode: standalone
+replicas: 1
 auth:
   rootUser: root
   rootPassword: q1w2e3r4100@
