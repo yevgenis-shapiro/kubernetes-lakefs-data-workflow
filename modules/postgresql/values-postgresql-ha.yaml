@@ -1,0 +1,9 @@
+
+auth:
+  username: postgres
+  password: postgres
+  database: postgres
+
+initdbScripts:
+  create-lakefs.sql: |
+    CREATE DATABASE lakefs;
