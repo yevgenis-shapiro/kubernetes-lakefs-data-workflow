@@ -28,10 +28,6 @@ module "minio" {
   depends_on = [module.nginx]
 }
 
-module "velero" {
-  source = "./modules/velero"
-  depends_on = [module.minio]
-}
 
 
 
