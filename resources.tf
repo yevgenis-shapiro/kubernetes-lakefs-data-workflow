@@ -28,6 +28,9 @@ module "minio" {
   depends_on = [module.nginx]
 }
 
-
+module "lakefs" {
+  source = "./modules/lakefs"
+  depends_on = [module.minio]
+}
 
 
