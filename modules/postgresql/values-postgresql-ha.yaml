@@ -4,7 +4,7 @@ primary:
     size: 10Gi
 
 replica:
-  replicaCount: 1   # disable replicas
+  replicaCount: 0   # disable replicas, keep only primary
 
 auth:
   username: postgres
@@ -14,3 +14,8 @@ auth:
 initdbScripts:
   create-lakefs.sql: |
     CREATE DATABASE lakefs;
+    
+# Workaround for the common library bug
+common:
+  secrets:
+    failOnNew: false
