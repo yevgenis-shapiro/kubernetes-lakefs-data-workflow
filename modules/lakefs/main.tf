@@ -9,7 +9,7 @@ resource "helm_release" "lakefs" {
   # Example: override values
   set {
     name  = "database.connectionString"
-    value = "postgres://user:password@postgres:5432/lakefs?sslmode=disable"
+    value = "postgres://postgres:postgres@postgres:5432/lakefs?sslmode=disable"
   }
 
   set {
@@ -19,21 +19,21 @@ resource "helm_release" "lakefs" {
 
   set {
     name  = "blockstore.s3.region"
-    value = "us-east-1"
+    value = "us-west-rack2"
   }
 
   set {
     name  = "blockstore.s3.endpoint"
-    value = "https://s3.amazonaws.com"
+    value = "http://minio.default.svc.cluster.local:9000"
   }
 
   set {
     name  = "blockstore.s3.credentials.accessKey"
-    value = "your-access-key"
+    value = "root"
   }
 
   set {
     name  = "blockstore.s3.credentials.secretKey"
-    value = "your-secret-key"
+    value = "q1w2e3r4100@"
   }
 }
