@@ -44,7 +44,7 @@ resource "helm_release" "lakefs" {
 
   set {
     name  = "blockstore.s3.credentials.accessKey"
-    value = "root"
+    value = "admin"
   }
 
   set {
