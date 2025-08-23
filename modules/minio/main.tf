@@ -12,7 +12,7 @@ auth:
   rootUser: root
   rootPassword: q1w2e3r4100@
 
-defaultBuckets: "velero,terraform,loki"
+defaultBuckets: "lakefs,terraform"
 
 persistence:
   enabled: true
