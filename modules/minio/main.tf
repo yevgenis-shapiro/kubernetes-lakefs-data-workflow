@@ -19,6 +19,7 @@ defaultBuckets: "lakefs,terraform"
 persistence:
   enabled: true
   size: 10Gi
+  storageClass: standard # replace with your cluster StorageClass
 
 service:
   type: ClusterIP 
