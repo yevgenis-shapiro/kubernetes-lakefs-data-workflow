@@ -1,3 +1,4 @@
+
 provider "lakefs" {
   endpoint   = "http://lakefs.lakefs.svc.cluster.local:80"
   access_key = "AKIAJ25JLGWO747UT5FQ"
