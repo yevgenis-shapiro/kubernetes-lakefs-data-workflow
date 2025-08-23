@@ -1,3 +1,10 @@
+primary:
+  persistence:
+    enabled: true
+    size: 10Gi
+
+replica:
+  replicaCount: 1   # disable replicas
 
 auth:
   username: postgres
