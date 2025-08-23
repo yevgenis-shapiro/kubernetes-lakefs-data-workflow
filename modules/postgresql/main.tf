@@ -5,33 +5,47 @@ resource "helm_release" "postgresql" {
   chart            = "postgresql-ha"
   namespace        = "default"
   create_namespace = true
-  timeout          = 300
+  timeout          = 600
+  wait             = true
 
   set {
-    name  = "username"
+    name  = "postgresql.username"
     value = "postgres"
   }
 
   set {
-    name  = "password"
+    name  = "postgresql.password"
     value = "postgres"
   }
-
 }
 
-resource "null_resource" "wait_for_postgresql" {
-  triggers = {
-    key = uuid()
+resource "kubernetes_job" "create_lakefs_db" {
+  metadata {
+    name      = "create-lakefs-db"
+    namespace = helm_release.postgresql.namespace
   }
 
-  provisioner "local-exec" {
-    command = <<EOF
-      printf "\nWaiting for the linkerd pods to start...\n"
-      sleep 5
-      until kubectl wait -n ${helm_release.postgresql.namespace} --for=condition=Ready pods --all; do
-        sleep 2
-      done  2>/dev/null
-    EOF
+  spec {
+    template {
+      spec {
+        restart_policy = "OnFailure"
+
+        container {
+          name  = "create-db"
+          image = "bitnami/postgresql:15"
+          command = ["psql"]
+          args = [
+            "-h", "postgresql-ha-postgresql-ha-pgpool",
+            "-U", "postgres",
+            "-c", "CREATE DATABASE lakefs;"
+          ]
+          env {
+            name  = "PGPASSWORD"
+            value = "postgres"
+          }
+        }
+      }
+    }
   }
 
   depends_on = [helm_release.postgresql]
