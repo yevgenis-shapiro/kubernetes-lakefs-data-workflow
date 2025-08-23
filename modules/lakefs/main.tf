@@ -6,10 +6,25 @@ resource "helm_release" "lakefs" {
   namespace  = "lakefs"
   create_namespace = true
 
-  # Example: override values
+  # PostgreSQL embedded in the chart
   set {
-    name  = "database.connectionString"
-    value = "postgres://postgres:postgres@postgres:5432/lakefs?sslmode=disable"
+    name  = "postgresql.enabled"
+    value = "true"
+  }
+
+  set {
+    name  = "postgresql.postgresqlUsername"
+    value = "lakefs_user"
+  }
+
+  set {
+    name  = "postgresql.postgresqlPassword"
+    value = "lakefs_password"
+  }
+
+  set {
+    name  = "postgresql.postgresqlDatabase"
+    value = "lakefs_db"
   }
 
   set {
