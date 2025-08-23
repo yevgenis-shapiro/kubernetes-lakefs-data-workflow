@@ -1,7 +1,7 @@
 provider "lakefs" {
   endpoint   = "http://lakefs.lakefs.svc.cluster.local:80"
-  access_key = "access_key_here"
-  secret_key = "secret_key_here"
+  access_key = "AKIAJ25JLGWO747UT5FQ"
+  secret_key = "xtjzyzES3sEzwhyaZHEY4vzEvNhtTfb6Fty4kAye"
 }
 
 resource "lakefs_repository" "example" {
